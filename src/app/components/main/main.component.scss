@@ -1,0 +1,73 @@
+::ng-deep section {
+    width: calc(100vw - 280px);
+}
+
+main {
+    .phonebook-wrapper {
+        justify-content: space-between !important;
+
+        mat-card {
+            mat-card-content {
+                padding: 8px 16px;
+            }
+
+            .contact-details {
+                width: 100%;
+
+                mat-card-title {
+                    justify-content: space-between !important;
+                }
+
+                mat-card-actions {
+                    margin-top: 10px;
+                    justify-content: space-between !important;
+
+                    button {
+                        border: none;
+                        outline: none;
+                    }
+
+                    .add-import-btn {
+                        display: flex;
+                        column-gap: 10px;
+                    }
+                }
+            }
+
+            .create-segment {
+                width: 100%;
+
+                mat-card-content {
+                    div {
+                        input {
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .no-found-page {
+            width: 300px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .card-wrapper {
+            width: 100%;
+        }
+
+        .no-found-page {
+            width: 300px;
+        }
+    }
+
+
+
+    @media (max-width: 576px) {
+        .no-found-page {
+            display: none;
+        }
+    }
+}

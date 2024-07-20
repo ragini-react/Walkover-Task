@@ -1,0 +1,48 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+
+.segmento-wrapper {
+    width: 280px;
+    height: 100vh;
+
+    div {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &.nav-items {
+            height: calc(100% - 110px);
+        }
+
+        ul {
+            li {
+                margin: 16px 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .bottom-section {
+        button {
+            width: 100%;
+
+        }
+    }
+}
+
+
+
+
+
+
+// @media (max-width: 576px) {
+//     aside {
+//         display: none;
+//     }
+
+//
+// }
